@@ -1,0 +1,16 @@
+" Scripts and Plugins" {{{
+filetype off
+
+"set runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin('~/.vim/plugins/')
+
+"Vundle managing vundle!
+Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+
+"
+
+call vundle#end()
+filetype plugin indent on
+"}}}

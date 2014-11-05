@@ -1,0 +1,65 @@
+set number
+set nocompatible 
+set encoding=utf-8
+set history=256			      "Number of things to remember in history"
+set timeoutlen=250		    "Time to wait after ESC (default has an annoying delay"
+set pastetoggle=<f10>	    "toggle between paste and normal: for 'safer' pasting
+
+" Formatting "{{{
+set fo+=o			" Automatically insert the current comment Leader after hitting 'o' or 'O' in normalmode.
+set fo-=r			" Do not automatically insert a comment after an enter
+set fo-=t			" Do not auto-wrap text using textwidth (not to comments)
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+set smarttab
+
+set backspace=indent
+set backspace+=eol
+set backspace+=start
+
+set autoindent
+set cindent
+set indentkeys-=0#
+set cinkeys-=0#
+set cinoptions=:s,ps,ts,cs
+set cinwords=if,else,while,do
+set cinwords+=for,switch,case
+" "}}}
+
+"  Visual "{{{
+syntax on
+set mouse=a
+set mousehide
+
+set showmatch
+set matchtime=2
+set wildmode=longest,list
+set completeopt+=preview
+set novisualbell
+set noerrorbells
+set vb t_vb=
+
+
+set laststatus=2
+set shortmess=atI
+set showcmd
+set foldenable
+set foldmethod=marker
+set foldlevel=100
+
+set foldopen=block,hor,tag
+set foldopen+=percent,mark
+set foldopen+=quickfix
+set virtualedit=block
+
+set splitbelow
+set splitright
+
+set list                      " display unprintable characters f12 - switches
+set listchars=tab:\ ·,eol:¬
+set listchars+=trail:·
+set listchars+=extends:»,precedes:«
+map <silent> <F12> :set invlist<CR>
+" }}}
